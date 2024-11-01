@@ -4,7 +4,7 @@
 
 pragma solidity >=0.7.0 <0.9.0;
 
- contract StaticArrays {
+contract StaticArrays {
 
     int[3] storageIntArray = [int(1), 2];        // 일부 초기값이 있는 정적 배열.
     bool[5] storageBoolArray;                    // 초기값 없는 정적 배열.
