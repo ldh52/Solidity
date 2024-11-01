@@ -7,7 +7,7 @@ pragma solidity >=0.7.0 <0.9.0;
 contract DynamicArrays2 {
     // Storage Dynamic 배열.
     int8[] storageInt8Array;	            // 동적 배열. Storage가 기본.
-    bool[] storageBoolArray;	    // 동적 배열. Storage가 기본.
+    bool[] storageBoolArray;	            // 동적 배열. Storage가 기본.
 
     function testArrays() public returns (uint8[] memory) {
         storageBoolArray = new bool[](5);        // 이미 선언된 storage 동적 배열에 저장공간 할당.
