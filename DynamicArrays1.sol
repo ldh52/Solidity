@@ -7,7 +7,7 @@ pragma solidity >=0.7.0 <0.9.0;
 contract DynamicArrays1 {
     // Storage Dynamic 배열.
     uint[] public arr1 = [1, 2, 3];     // 초기값이 있는 동적 배열. 초기값 대입은 storage 배열이라 가능함.
-    uint[] public arr2;                   // 빈 동적 배열.
+    uint[] public arr2;                 // 빈 동적 배열.
 
     // 배열의 원소 반환.
     function getElement(uint i) public view returns (uint) {
@@ -28,7 +28,7 @@ contract DynamicArrays1 {
     // Dynamic 배열의 마지막 원소를 꺼집어 낸다.
     function pop() public returns (uint) {
         uint last = arr1[arr1.length-1];
-        arr1.pop();             // 마지막 값을 반환하지 않고 그냥 버린다.
+        arr1.pop();                      // 마지막 값을 반환하지 않고 그냥 버린다.
         return last;
     }
 
