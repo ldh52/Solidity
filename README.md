@@ -17,3 +17,4 @@ remixd -s C:\Remix --remix-ide https://remix.ethereum.org/#lang=en&optimize=fals
 - StructExample1.sol
 - StructExample2.sol
 - StructExample3.sol
+- ConditionExample.sol
