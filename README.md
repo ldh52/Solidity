@@ -14,3 +14,6 @@ remixd -s C:\Remix --remix-ide https://remix.ethereum.org/#lang=en&optimize=fals
 - MappingExample.sol
 - MappingNested.sol
 - EnumLanguage.sol
+- StructExample1.sol
+- StructExample2.sol
+- StructExample3.sol
