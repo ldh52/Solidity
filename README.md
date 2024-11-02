@@ -22,3 +22,4 @@ remixd -s C:\Remix --remix-ide https://remix.ethereum.org/#lang=en&optimize=fals
 - FunctionExample.sol
 - ModifierExample1.sol
 - ModifierExample2.sol
+- ConstructorExample.sol
