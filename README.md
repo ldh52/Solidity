@@ -12,3 +12,4 @@ remixd -s C:\Remix --remix-ide https://remix.ethereum.org/#lang=en&optimize=fals
 - StringDataType.sol
 - String2Bytes.sol
 - MappingExample.sol
+- MappingNested.sol
