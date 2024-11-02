@@ -20,3 +20,5 @@ remixd -s C:\Remix --remix-ide https://remix.ethereum.org/#lang=en&optimize=fals
 - ConditionExample.sol
 - LoopExample.sol
 - FunctionExample.sol
+- ModifierExample1.sol
+- ModifierExample2.sol
