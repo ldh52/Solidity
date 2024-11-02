@@ -19,3 +19,4 @@ remixd -s C:\Remix --remix-ide https://remix.ethereum.org/#lang=en&optimize=fals
 - StructExample3.sol
 - ConditionExample.sol
 - LoopExample.sol
+- FunctionExample.sol
