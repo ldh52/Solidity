@@ -24,3 +24,4 @@ remixd -s C:\Remix --remix-ide https://remix.ethereum.org/#lang=en&optimize=fals
 - ModifierExample2.sol
 - ConstructorExample.sol
 - ERC20Token.sol
+- ERC721TokenOZ.sol
