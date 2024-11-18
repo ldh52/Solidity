@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Bootstrap 컴퍼넌트 : 동적으로 카드 추가</title>
+    <style>
+        /* 헤더 */
+        header {
+            width:100%;
+            height: 100px;
+            background-color: greenyellow;
+        }
+
+        header > div {
+            text-align:center;
+            padding-top:20px;
+            font-family:'Merienda', cursive;
+            font-size: 40px;
+            font-weight: bold;
+        }
+
+        /* 푸터 */
+        footer{   
+            width: 100%;                      /* 너비 */
+            height:100px;                     /* 높이 */
+            border-top:2px double black;    /* 가로선 */
+        }
+
+        footer > div {
+            text-align:center;
+            font-family:'Times New Roman';
+            font-size: 20px;
+            padding: 15px;
+        }
+    </style>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+
+    <header>
+        <div>유기동물 보호소</div>
+    </header>
+
+    <main>
+        
+    <!-- 그리드를 만들고 행별로 카드 2~3장씩 넣어 본다. -->
+        <div class="container">
+            <div class="row my-3">
+
+                <!-- 나중에 카드가 동적으로 삽입될 자리 -->
+            
+            </div>  <!-- Row의 끝-->
+        </div>   <!-- End of container. -->
+    </main>
+
+    <footer>
+        <div>
+        구름 💙
+        </div>
+    </footer>
+
+    <!-- 카드 템플릿 -->      
+    <div id = "cardTemplate" style ="display:none">      <!--일단은 숨겨진 채로 둔다.--> 
+    <div class="col-md-4 col-sm-6 my-3">
+        <div class="card" style="width: 100%">
+            <img src="" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 id = "myTitle" class="card-title">제목</h5>
+                <p id = 'myID' class="card-text"> <b> ID : </b> <span> </span></p>
+                <p id = 'myBreed' class="card-text"> <b> 품종 : </b> <span> </span></p>
+                <p id = "myAge" class ="card-text"> <b> 나이 : </b> <span> </span></p>
+                <button type="button" class="m-4 btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal" style="display:inline">입양하기</button>
+                <button type="button" class="m-4 btn btn-primary" style="display:none" >입양자 정보</a>   <!--일단은 숨겨진 채로 둔다.--> 
+            </div>
+            </div>
+    </div>
+    </div>
+
+    <!-- 모달창 준비 -->
+    <div class="modal" tabindex="-1" id="myModal">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">다음 정보를 입력해 주세요</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <input type="hidden" id="myID" />                 <!-- 카드에서 가져온 ID 정보를 저장해 두는 곳. -->
+              <input type="text" class="form-control" id="name" placeholder="입양자 이름" />
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">취소</button>
+              <button type="button" class="btn btn-primary" onclick="submitModal()">입양 확인!</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <!--  jQuery를 불러온다. -->
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script> -->
+    <script src="./js/jquery-3.7.1.min.js"></script>
+    <script>
+
+    // Document가 ready하면 다음을 실행한다.
+    $( function(){
+
+        // 유기동물 정보를 JSON 파일에서 불러온다.
+        $.getJSON('./js/pet-animals.json', function(data){          // 유기동물 정보를 불러온 이후 콜백함수 실행.
+            let cardTemplate = $('#cardTemplate')                   // 카드 템플레이트 가져오기.
+            data.forEach( (x) => {
+                cardTemplate.find('img').attr('src', x.src)
+                cardTemplate.find('#myTitle').text(x.title)
+                cardTemplate.find('#myID').find('span').text(x.id)
+                cardTemplate.find('#myBreed').find('span').text(x.breed)
+                cardTemplate.find('#myAge').find('span').text(x.age)
+                $('.row').append(cardTemplate.html())               // 준비된 카드 템플레이트 삽입!                             
+            });
+
+        })
+
+        // 모달창이 보여지는 이벤트 핸들링 함수 부착!
+        $('#myModal').on('shown.bs.modal', (e) =>{
+            // $(e.relatedTarget).parent()는 모달을 호출한 부모.
+            // $(e.currentTarget)는 모달 자체.
+
+            let id = $(e.relatedTarget).parent().find('#myID').find('span').text()    // 모달을 호출한 카드의 ID 값!
+            $(e.currentTarget).find('#myID').val(id)                                  // 가져온 ID를 모달창의 숨겨진 값으로 저장.
+            $(e.currentTarget).find('#name').val('')                                  // 입양자 이름 초기화.
+
+        })
+
+    })
+
+    // 기타 이벤트 처리 함수.
+    function submitModal(){
+        let id = $('#myModal').find('#myID').val()                   // 모달창이 품고 있던 ID.
+        let name = $('#myModal').find('#name').val()                 // 모달창으로 입력된 입양자 데이터.
+        console.log(`ID = ${id}는 ${name}에게 입양되었습니다!`)
+        $('#myModal').find('#myID').val(0)          // 리셋!
+        $('#myModal').find('#name').val('')         // 리셋! 
+        $('#myModal').modal('hide')                 // 모달창을 숨기다.
+    }
+
+    </script>
+
+</body>
+</html>

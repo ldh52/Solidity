@@ -1,0 +1,139 @@
+/* Text 관련 추가 속성 */
+
+
+/* 모든 태그에 동일하게 적용 */
+* {
+    font-size: 20px;
+    font-family: 'Times New Roman';
+}
+
+/* color */
+
+.colorExample .c1 {
+    color: red;
+}
+
+.colorExample .c2 {
+    color: green;
+}
+
+.colorExample .c3 {
+    color: blue;
+}
+
+.colorExample .c4 {
+    color: rgba(255, 200, 100, 0.5);
+}
+
+.colorExample .c5 {
+    color: #8100cc;
+}
+
+/* text-align */
+
+.textAlignExample .c1 {
+    text-align: left;
+}
+
+.textAlignExample .c2 {
+    text-align: right;
+}
+
+.textAlignExample .c3 {
+    text-align: center;
+}
+
+/* line-height */
+.lineHeightExample .c1 {
+    line-height: 15px;
+}
+
+.lineHeightExample .c2 {
+    line-height: 20px;
+}
+
+.lineHeightExample .c3 {
+    line-height: 30px;
+}
+
+/* text-decoration */
+.textDecorationExample .c1 {
+    text-decoration: underline;
+}
+
+.textDecorationExample .c2 {
+    text-decoration: overline;
+}
+
+.textDecorationExample .c3 {
+    text-decoration: line-through;
+}
+
+/* letter-spacing */
+.letterSpacingExample .c1 {
+    letter-spacing: 1px;
+}
+
+.letterSpacingExample .c2 {
+    letter-spacing: 2px;
+}
+
+.letterSpacingExample .c3 {
+    letter-spacing: 3px;
+}
+
+/* word-spacing */
+.wordSpacingExample .c1 {
+    word-spacing: 1px;
+}
+
+.wordSpacingExample .c2 {
+    word-spacing: 5px;
+}
+
+.wordSpacingExample .c3 {
+    word-spacing: 10px;
+}
+
+/* text-indent */
+.textIndentExample .c1 {
+    text-indent: 10px;
+}
+
+.textIndentExample .c2 {
+    text-indent: 50px;
+}
+
+.textIndentExample .c3 {
+    text-indent: 100px;
+}
+
+/* text-shadow */
+.textShadowExample .c1 {
+    text-shadow: 1px 1px 2px gray;
+}
+
+.textShadowExample .c2 {
+    text-shadow: 2px 2px 4px hotpink;
+}
+
+.textShadowExample .c3 {
+    text-shadow: 3px 3px 6px steelblue;
+}
+
+/* text-transform */
+.textTransformExample .c1 {
+    text-transform: capitalize;
+}
+
+.textTransformExample .c2 {
+    text-transform: uppercase;
+}
+
+.textTransformExample .c3 {
+    text-transform: lowercase;
+}
+
+.textTransformExample .c4 {
+    text-transform: full-width;
+}

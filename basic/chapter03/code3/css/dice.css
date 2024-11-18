@@ -1,0 +1,50 @@
+/* CSS */
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@700&display=swap');
+
+/* 전반적인 스타일링 */
+* {
+    margin:0;            /* 마진 리셋 */
+    padding:0;           /* 패딩 리셋 */
+    font-family:'Times New Roman';
+    font-size: 20px;
+   }
+
+/* 헤더 */
+header {
+    width:100%;
+    height: 100px;
+    background-color: greenyellow;
+}
+
+header > div {
+    text-align:center;
+    padding-top:20px;
+    font-family:'Merienda', cursive;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+/* 메인 */
+main {
+    margin: 30px 10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.dice {
+    text-align:center;
+    margin: 30px;
+}
+
+/* 푸터 */
+footer {   
+    width: 100%;                      /* 너비 */
+    height:100px;                     /* 높이 */
+    border-top:3px double black;    /* 가로선 */
+  }
+
+footer > div {
+    text-align:center;
+    padding: 15px;
+}

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form과 Input</title>
+</head>
+<body>
+    <form action="www.reserve-example.com" method="get">
+        <label for="id">ID</label>
+        <input type="text" name="id" id="id"><br>
+        <label for="pwd">Password</label>
+        <input type="password" name="password" id="pwd"><br> <br>
+        <label for="male">남</label>
+        <input type="radio" name="gender" id="male" value="m" checked>
+        <label for="female">여</label>
+        <input type="radio" name="gender" id="female" value="f"><br>
+        <p> <b>주문할 음식 선택: </b> </p>
+        <label for="food1">한식</label>
+        <input type="checkbox" name="food" id="food1" value="Korean"><br>
+        <label for="food2">중식</label>
+        <input type="checkbox" name="food" id="food2" value="Chinese"><br>
+        <label for="food3">양식</label>
+        <input type="checkbox" name="food" id="food3" value="Western"><br>
+        <br>
+        <input type="submit" value="Reserve">
+    </form>
+</body>
+</html>

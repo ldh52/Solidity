@@ -1,0 +1,404 @@
+/* Box model 관련 속성. */
+
+/* 모든 태그에 동일하게 적용. */
+* {
+    font-size: 20px;
+    font-family: 'Times New Roman';
+}
+ 
+
+/* content */ 
+
+/* width와 height에서 %단위로 크기를 정해줄 때에는 바로 위의 부모 요소 대비로 실제 크기가 정해진다. */
+.one {
+    width: 50%;
+    height: 100px;
+    background-color: red;
+}
+
+.two {
+    width: 50%;
+    height: 50%;
+    background-color: green;
+}
+
+.three {
+    width: 50%;
+    height: 50%;
+    background-color: blue;
+}
+
+.one_ {
+    width: 50vw;
+    height: 30vh;
+    background-color: red;
+}
+
+.two_ {
+    width: 40vw;
+    height: 20vh;
+    background-color: green;
+}
+
+.three_ {
+    width: 30vw;
+    height: 10vh;
+    background-color: blue;
+}
+
+
+.one__ {
+    width: 50vmax;
+    height: 30vmin;
+    background-color: red;
+}
+
+.two__ {
+    width: 40vmax;
+    height: 20vmin;
+    background-color: green;
+}
+
+.three__ {
+    width: 30vmax;
+    height: 10vmin;
+    background-color: blue;
+}
+
+/* width와 height에서 px단위로 절대 크기를 설정할 수 있다. */
+
+.contentExample .c1 {
+    background-color: yellowgreen;
+    width: 300px;
+    height: 20px;
+}
+
+.contentExample .c2 {
+    background-color: yellowgreen;
+    width: 300px;
+    height: 40px;
+}
+
+.contentExample .c3 {
+    background-color: yellowgreen;
+    width: 400px;
+    height: 20px;
+}
+
+.contentExample .c4 {
+    background-color: yellowgreen;
+    width: 400px;
+    height: 40px;
+}
+
+.contentExample .c5 {
+    background-color: yellowgreen;
+    width: 100%;
+    height: 40px;
+}
+
+/* padding */
+.paddingExample .c1 {
+    background-color: pink;
+    width: 400px;
+    height: 20px;
+    padding-top: 20px;
+}
+
+.paddingExample .c2 {
+    background-color: pink;
+    width: 400px;
+    height: 20px;
+    padding-bottom: 20px;
+}
+
+.paddingExample .c3 {
+    background-color: pink;
+    width: 400px;
+    height: 20px;
+    padding-left: 20px;
+}
+
+.paddingExample .c4 {
+    background-color: pink;
+    width: 400px;
+    height: 20px;
+    padding-right: 20px;
+}
+
+.paddingExample .c5 {
+    background-color: pink;
+    width: 400px;
+    height: 20px;
+    padding: 20px 50px;
+}
+
+.paddingExample .c6 {
+    background-color: pink;
+    width: 400px;
+    height: 20px;
+    padding: 20px;
+}
+
+/* border-style */
+.borderStyleExample .c1 {
+    background-color: aquamarine;
+    width: 300px;
+    height: 30px;
+    padding: 10px;
+    border-style: solid;
+}
+
+.borderStyleExample .c2 {
+    background-color: aquamarine;
+    width: 300px;
+    height: 30px;
+    padding: 10px;
+    border-style: dotted;
+}
+
+.borderStyleExample .c3 {
+    background-color: aquamarine;
+    width: 300px;
+    height: 30px;
+    padding: 10px;
+    border-style: dashed;
+}
+
+.borderStyleExample .c4 {
+    background-color: aquamarine;
+    width: 300px;
+    height: 30px;
+    padding: 10px;
+    border-style: double;
+}
+
+.borderStyleExample .c5 {
+    background-color: aquamarine;
+    width: 300px;
+    height: 30px;
+    padding: 10px;
+    border-style: groove;
+}
+
+.borderStyleExample .c6 {
+    background-color: aquamarine;
+    width: 300px;
+    height: 30px;
+    padding: 10px;
+    border-style: inset;
+}
+
+.borderStyleExample .c7 {
+    background-color: aquamarine;
+    width: 300px;
+    height: 30px;
+    padding: 10px;
+    border-style: outset;
+}
+
+.borderStyleExample .c8 {
+    background-color: aquamarine;
+    width: 300px;
+    height: 30px;
+    padding: 10px;
+    border-style: ridge;
+}
+
+/* border-width */
+.borderWidthExample .c1 {
+    background-color: peachpuff;
+    width: 300px;
+    height: 30px;
+    padding: 10px;
+    border-style: solid;
+    border-width: 1px;
+}
+
+.borderWidthExample .c2 {
+    background-color: peachpuff;
+    width: 300px;
+    height: 30px;
+    padding: 10px;
+    border-style: solid;
+    border-width: 3px;
+}
+
+.borderWidthExample .c3 {
+    background-color: peachpuff;
+    width: 300px;
+    height: 30px;
+    padding: 10px;
+    border-style: solid;
+    border-width: 5px;
+}
+
+/* border-color */
+.borderColorExample .c1 {
+    background-color: yellow;
+    width: 300px;
+    height: 30px;
+    padding: 10px;
+    border-style: solid;
+    border-width: 3px;
+    border-color:blueviolet;
+}
+
+.borderColorExample .c2 {
+    background-color: yellow;
+    width: 300px;
+    height: 30px;
+    padding: 10px;
+    border-style: solid;
+    border-width: 3px;
+    border-color: aqua;
+}
+
+.borderColorExample .c3 {
+    background-color: yellow;
+    width: 300px;
+    height: 30px;
+    padding: 10px;
+    border-style: solid;
+    border-width: 2px;
+    border-color:red;
+}
+
+/* border-radius */
+.borderRadiusExample .c1 {
+    background-color: gainsboro;
+    width: 300px;
+    height: 30px;
+    padding: 10px;
+    border-style: solid;
+    border-width: 2px;
+    border-color:red;
+    border-radius: 5px;
+}
+
+.borderRadiusExample .c2 {
+    background-color: gainsboro;
+    width: 300px;
+    height: 30px;
+    padding: 10px;
+    border-style: solid;
+    border-width: 2px;
+    border-color:red;
+    border-radius: 10px;
+}
+
+.borderRadiusExample .c3 {
+    background-color: gainsboro;
+    width: 300px;
+    height: 30px;
+    padding: 10px;
+    border-style: solid;
+    border-width: 2px;
+    border-color:red;
+    border-radius: 20px;
+}
+
+/* border */
+.borderExample .c1 {
+    background-color: rgb(217, 255, 0);
+    width: 300px;
+    height: 30px;
+    padding: 10px;
+    border-top: 3px green solid; 
+}
+
+.borderExample .c2 {
+    background-color: rgb(217, 255, 0);
+    width: 300px;
+    height: 30px;
+    padding: 10px;
+    border-right: 4px blue dotted; 
+}
+
+.borderExample .c3 {
+    background-color: rgb(217, 255, 0);
+    width: 300px;
+    height: 30px;
+    padding: 10px;
+    border-bottom: 2px red dashed; 
+}
+
+.borderExample .c4 {
+    background-color: rgb(217, 255, 0);
+    width: 300px;
+    height: 30px;
+    padding: 10px;
+    border-left: 2px aqua double; 
+}
+
+.borderExample .c5 {
+    background-color: rgb(217, 255, 0);
+    width: 300px;
+    height: 30px;
+    padding: 10px;
+    border: 3px limegreen groove; 
+}
+
+/* margin */
+.marginExample .c1 {
+    background-color: rgb(0, 183, 255);
+    width: 300px;
+    height: 30px;
+    padding: 10px;
+    border: 2px limegreen groove; 
+    margin-top: 20px;
+}
+
+.marginExample .c2 {
+    background-color: rgb(0, 183, 255);
+    width: 300px;
+    height: 30px;
+    padding: 10px;
+    border: 2px limegreen groove; 
+    margin-right: 20px;
+}
+
+.marginExample .c3 {
+    background-color: rgb(0, 183, 255);
+    width: 300px;
+    height: 30px;
+    padding: 10px;
+    border: 2px limegreen groove; 
+    margin-bottom: 20px;
+}
+
+.marginExample .c4 {
+    background-color: rgb(0, 183, 255);
+    width: 300px;
+    height: 30px;
+    padding: 10px;
+    border: 2px limegreen groove; 
+    margin-left: 20px;
+}
+.marginExample .c4 {
+    background-color: rgb(0, 183, 255);
+    width: 300px;
+    height: 30px;
+    padding: 10px;
+    border: 2px limegreen groove; 
+    margin-left: 20px;
+}
+
+.marginExample .c5 {
+    background-color: rgb(0, 183, 255);
+    width: 300px;
+    height: 30px;
+    padding: 10px;
+    border: 2px limegreen groove; 
+    margin: 20px 40px;
+}
+
+.marginExample .c6 {
+    background-color: rgb(0, 183, 255);
+    width: 300px;
+    height: 30px;
+    padding: 10px;
+    border: 2px limegreen groove; 
+    margin: 30px;
+}
+

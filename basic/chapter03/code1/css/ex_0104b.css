@@ -1,0 +1,28 @@
+/* Display, Float, Clear 속성. */
+
+/* 모든 태그에 동일하게 적용. */
+* {
+    font-size: 20px;
+    font-family: 'Times New Roman';
+}
+
+/* Display */
+.displayExample .c1 {
+    background-color: yellow;
+    display: none;
+}
+
+.displayExample .c2 {
+    background-color: aquamarine;
+    padding:10px;
+    display: inline;
+}
+
+.displayExample .c3 {
+    background-color: lavender;
+    width: 100px;
+    padding:10px;
+    margin: 5px;
+    display: block;
+}
+

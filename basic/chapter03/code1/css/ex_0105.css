@@ -1,0 +1,16 @@
+/* 위치 관련 속성 */
+
+
+/* body {
+    background-color: aqua;
+}    */
+
+
+
+body {
+    background-image: url("/image/fig_02.png");  /* 리소스의 경로 */
+    background-repeat: no-repeat;                /* repeat, repeat-x, repeat-y, no-repeat 중 한가지 */
+    background-position: center center;          /* 수평=left,center,right. 수직=top,center,bottom 중 선택. */
+    background-attachment: fixed;                /* scroll, fixed 중 선택 */
+    background-size: cover;                      /* auto, contain, cover 중 선택 */ 
+}  

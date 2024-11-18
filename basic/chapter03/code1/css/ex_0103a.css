@@ -1,0 +1,160 @@
+/* Text 관련 속성 */
+
+/* font-family */
+
+.fontFamilyExample .c1 {
+   font-family: 'Times New Roman'; 
+}
+
+.fontFamilyExample .c2 {
+    font-family: Georgia;
+}
+
+.fontFamilyExample .c3 {
+    font-family: Garamond;
+}
+
+.fontFamilyExample .c4 {
+    font-family: Arial;
+}
+
+.fontFamilyExample .c5 {
+    font-family: Verdana;
+}
+
+.fontFamilyExample .c6 {
+    font-family: Helvetica;
+}
+
+.fontFamilyExample .c7 {
+    font-family:'Courier New';
+}
+
+.fontFamilyExample .c8 {
+    font-family: 'Lucida Console';
+}
+
+.fontFamilyExample .c9 {
+    font-family: 'Manaco';
+}
+
+/* font-family GOOGLE */
+
+.fontFamilyExampleGoogle .c1 {
+    font-family: 'Aboreto', cursive;   
+}
+
+.fontFamilyExampleGoogle .c2 {
+    font-family: 'Nanum Brush Script', cursive;  
+}
+
+.fontFamilyExampleGoogle .c3 {
+    font-family: 'Nanum Pen Script', cursive; 
+}
+
+/* font-size */
+
+.fontSizeExample .c1 {
+    font-size: 10px;
+}
+
+.fontSizeExample .c2 {
+    font-size: 20px;
+}
+
+.fontSizeExample .c3 {
+    font-size: 30px;
+}
+
+.fontSizeExample .c4 {
+    font-size: 1em;
+}
+
+.fontSizeExample .c5 {
+    font-size: 1.5em;
+}
+
+.fontSizeExample .c6 {
+    font-size: 2em;
+}
+
+/* font-style */
+.fontStyleExample .c1 {
+    font-size: 25px;
+    font-style: normal;
+}
+
+.fontStyleExample .c2 {
+    font-size: 25px;
+    font-style: italic;
+}
+
+.fontStyleExample .c3 {
+    font-size: 25px;
+    font-style: oblique;
+}
+
+/* font-weight */
+.fontWeightExample .c1 {
+    font-size: 25px;
+    font-weight: lighter;
+}
+
+.fontWeightExample .c2 {
+    font-size: 25px;
+    font-weight: normal;
+}
+
+.fontWeightExample .c3 {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.fontWeightExample .c4 {
+    font-size: 25px;
+    font-weight: bolder;
+}
+
+.fontWeightExample .c5 {
+    font-size: 25px;
+    font-weight: 100;
+}
+
+.fontWeightExample .c6 {
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.fontWeightExample .c7 {
+    font-size: 25px;
+    font-weight: 900;
+}
+
+/* font-variant */
+.fontVariantExample .c1 {
+    font-size: 25px;
+    font-variant: normal;
+}
+
+.fontVariantExample .c2 {
+    font-size: 25px;
+    font-variant: small-caps;
+}
+
+.fontVariantExample .c3 {
+    font-size: 25px;
+    font-variant: common-ligature small-caps;
+}
+
+/* font */
+.fontExample .c1 {
+    font: 20px Arial, sans-serif;
+}
+
+.fontExample .c2 {
+    font: 30px 'Times New Roman' ;
+}
+
+.fontExample .c3 {
+    font: 40px Georgia;
+}
